@@ -8,7 +8,7 @@ var pwaApp = {
   RegisterServiceWorker: function () {
     if ("serviceWorker" in navigator && "PushManager" in window) {
       navigator.serviceWorker
-        .register("serviceworker.js", { scope: "/" })
+        .register("serviceworker.js", { scope: "/TechFusionPWADemo/" })
         .then(function (swReg) {
           pwaApp.serviceWorkerRegistration = swReg;
           swReg.pushManager.getSubscription().then(function (subscription) {
