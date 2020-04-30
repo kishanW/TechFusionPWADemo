@@ -100,17 +100,18 @@ var cacheName = "techFusionPwaCache";
 function precache() {
   return caches.open(cacheName).then(function (cache) {
     return cache.addAll([
-      "./libraries/jquery-3.4.1.slim.min.js",
-      "./libraries/bootstap.min.css",
-      "./libraries/bootstrap.min.js",
-      "./libraries/popper.min.js",
-      "./index.htm",
-      "./fa-logo-w-wide.png",
-      "./site.js",
-      "./site.webmanifest.json",
-      "./fa-logo_w_bg.png",
-      "./fusion-logo-transparent-200.png",
-      "./offline-image.png",
+      "libraries/jquery-3.4.1.slim.min.js",
+      "libraries/bootstap.min.css",
+      "libraries/bootstrap.min.js",
+      "libraries/popper.min.js",
+      "index.htm",
+      "TechFusionPWADemo/",
+      "fa-logo-w-wide.png",
+      "site.js",
+      "site.webmanifest.json",
+      "fa-logo_w_bg.png",
+      "fusion-logo-transparent-200.png",
+      "offline-image.png",
     ]);
   });
 }
