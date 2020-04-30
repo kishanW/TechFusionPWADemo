@@ -10,7 +10,7 @@ self.addEventListener("install", function (event) {
   console.log("[service worker] precaching assets on install");
   event.waitUntil(precache());
 
-  // self.skipWaiting();
+  self.skipWaiting();
 });
 
 //listen to push notifications receive event
