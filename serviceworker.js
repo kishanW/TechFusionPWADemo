@@ -23,8 +23,8 @@ self.addEventListener("push", function (event) {
   //set the options for the notification
   var options = {
     body: notificationText,
-    icon: "/fa-logo_w_bg.png",
-    badge: "/fa-logo_w_bg.png",
+    icon: "fa-logo_w_bg.png",
+    badge: "fa-logo_w_bg.png",
     vibrate: [100, 50, 100],
     actions: [],
     tag: "TechFusion",
