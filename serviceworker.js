@@ -107,6 +107,7 @@ function precache() {
       "libraries/popper.min.js",
       "index.html",
       "/",
+      "/TechFusionPWADemo/",
       "fa-logo-w-wide.png",
       "site.js",
       "site.webmanifest.json",
