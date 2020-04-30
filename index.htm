@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>TechFusion PWA Demo 2</title>
+	<link rel="icon" href="/fa-logo_w_bg.png" type="image/x-icon">
+
+	<!--PWA stuff-->
+	<meta name="theme-color" content="#0b3c5d">
+	<link rel="manifest" href="/site.webmanifest.json" crossorigin="use-credentials">
+
+	<!--bootrsrap css -->
+	<link rel="stylesheet" href="/libraries/bootstap.min.css">
+
+</head>
+
+<body>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="display-4">Setting up push notifications</h1>
+				<hr>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-3 col-md-6 col-sm-6">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">An installable web app</h5>
+						<button id="installButton" class="btn btn-primary">
+							Install
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-3 col-md-6 col-sm-6">
+				<div class="card">
+					<div class="card-body">
+						<p class="card-text">
+							<strong>Step #1</strong> get the app server public key from
+							<a href="https://web-push-codelab.glitch.me/" target="_blank">web-push-codelab.glitch.me
+							</a> paste into the textbox below.
+							<input type="text" id="appserverpubkey" class="form-control"
+								placeholder="Your app server public key...">
+							<div class="alert alert-success d-none" role="alert" id="appserverpubkeyready">
+								App server public key saved, ready for next step
+							</div>
+						</p>
+						<hr>
+						<p class="card-text">
+							<strong>Step #2</strong> Click below to get user permission to subscribe to push
+							notifications.
+						</p>
+						<button id="togglePushSubscription" class="btn btn-primary" disabled>
+							Subscribe
+						</button>
+						<hr>
+
+						<p class="card-text">
+							<strong>Step #3</strong> Subscription object to copy to <a
+								href="https://web-push-codelab.glitch.me/" target="_blank">web-push-codelab.glitch.me
+							</a> to text out the push notifications
+							<textarea name="" id="pushSubscriptionTextArea" placeholder="not subscribed yet."
+								class="form-control" style="height: 300px;"></textarea>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+
+<script src="/libraries/jquery-3.4.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="/libraries/popper.min.js" crossorigin="anonymous"></script>
+<script src="/libraries/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="/site.js"></script>
+
+</html>
