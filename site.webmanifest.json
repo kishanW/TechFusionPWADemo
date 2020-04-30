@@ -22,9 +22,9 @@
 			"purpose": "any maskable"
 		}
 	],
-	"start_url": "/",
+	"start_url": "/TechFusionPWADemo/",
 	"background_color": "#eff6fa",
 	"display": "fullscreen",
-	"scope": "/",
+	"scope": "/TechFusionPWADemo/",
 	"theme_color": "#eff6fa"
 }
