@@ -35,9 +35,10 @@ self.addEventListener("push", function (event) {
     data: {
       //you can store your custom data here to retrieve later
       someExampleProperty: "example property",
+      isKishanTheBest: true,
     },
     actions: [{ action: "view", title: "view" }],
-    notificationClickUrl: "/",
+    notificationClickUrl: "/TechFusionPWADemo/",
   };
 
   event.waitUntil(
@@ -61,7 +62,7 @@ self.addEventListener("notificationclick", function (event) {
     "| custom data: ",
     customData
   );
-  clients.openWindow("/");
+  clients.openWindow("/TechFusionPWADemo/");
 
   //close the notification
   event.notification.close();
